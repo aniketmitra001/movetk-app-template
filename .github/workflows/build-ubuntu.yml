@@ -1,4 +1,4 @@
-name: MoveTK-CI-Ubuntu
+name: CI-Ubuntu
 
 on:
   push:

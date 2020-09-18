@@ -33,6 +33,7 @@ jobs:
           run: |
               export LIBRARY_PATH=/usr/local/lib/ 
               echo $LIBRARY_PATH 
+              ls -lrt
               ./ci.sh
         - uses: actions/checkout@v2
           with:

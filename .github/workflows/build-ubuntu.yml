@@ -33,11 +33,13 @@ jobs:
           run: |
               export LIBRARY_PATH=/usr/local/lib/ 
               echo $LIBRARY_PATH 
-              ls -lrt
+              cd movetk
               ./ci.sh
         - uses: actions/checkout@v2
           with:
             path: movetk-app-template
         - name: build this app
-          run: ls -lrt && ./ci.sh  	  	   
+          run: |
+              cd movetk-app-template
+              ./ci.sh  	  	   
    

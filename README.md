@@ -1,4 +1,5 @@
 # movetk-app-template
+![CI-macOS](https://github.com/aniketmitra001/movetk-app-template/workflows/CI-macOS/badge.svg?branch=master&event=push) ![CI-Ubuntu](https://github.com/aniketmitra001/movetk-app-template/workflows/CI-Ubuntu/badge.svg?branch=master&event=push)
 
 An example for using [MoveTK](https://github.com/heremaps/movetk) in your application
 

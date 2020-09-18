@@ -20,4 +20,5 @@ jobs:
         - name: build movetk
           run: export LIBRARY_PATH=/usr/local/lib/ && echo $LIBRARY_PATH && ./ci.sh
      	- uses: actions/checkout@v2  
+        - name: build this app
 	  run:	ls -lrt && ./ci.sh

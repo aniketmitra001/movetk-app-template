@@ -41,5 +41,8 @@ jobs:
         - name: build this app
           run: |
               cd movetk-app-template
-              ./ci.sh  	  	   
+              ./ci.sh
+        - name: pwd
+          run: |
+            pwd
    

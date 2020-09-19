@@ -58,6 +58,7 @@ jobs:
         - name: Get trajectory statisics
           run: |
             cd movetk-app-template/out
+            pwd
             ../Release/src/process_trajectories trajectories.csv
         - uses: actions/upload-artifact@v2
           with:

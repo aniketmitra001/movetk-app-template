@@ -63,13 +63,13 @@ jobs:
         - uses: actions/upload-artifact@v2
           with:
               name: trajectories.csv
-              path: /home/runner/work/movetk-app-template/movetk-app-template/movetk-app-template/out/trajectories.csv
+              path: /Users/runner/work/movetk-app-template/movetk-app-template/movetk-app-template/out/trajectories.csv
         - uses: actions/upload-artifact@v2
           with:
               name: trajectory_statistics.csv
-              path: /home/runner/work/movetk-app-template/movetk-app-template/movetk-app-template/out/trajectory_statistics.csv
+              path: /Users/runner/work/movetk-app-template/movetk-app-template/movetk-app-template/out/trajectory_statistics.csv
         - uses: actions/upload-artifact@v2
           with:
               name: output_trajectories.geojson
-              path: /home/runner/work/movetk-app-template/movetk-app-template/movetk-app-template/out/output_trajectories.geojson
+              path: /Users/runner/work/movetk-app-template/movetk-app-template/movetk-app-template/out/output_trajectories.geojson
 

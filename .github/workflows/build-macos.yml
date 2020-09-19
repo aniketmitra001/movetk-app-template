@@ -46,15 +46,29 @@ jobs:
               ./ci.sh
         - name: Get GeoLife trajectories
           run: |
-             pwd
+             cd movetk-app-template
              wget https://download.microsoft.com/download/F/4/8/F4894AA5-FDBC-481E-9285-D5F8C4C4F039/Geolife%20Trajectories%201.3.zip
              unzip Geolife\ Trajectories\ 1.3.zip
         - name: Preprocess  GeoLife trajectories
           run: |
+             cd movetk-app-template
              python3 geolife.py
              cd out
              mv out.csv trajectories.csv
         - name: Get trajectory statisics
           run: |
-            cd out
+            cd movetk-app-template/out
             ../Release/src/process_trajectories trajectories.csv
+        - uses: actions/upload-artifact@v2
+            with:
+              name: trajectories.csv
+              path: /home/runner/work/movetk-app-template/movetk-app-template/out/trajectories.csv
+        - uses: actions/upload-artifact@v2
+            with:
+              name: trajectory_statistics.csv
+              path: /home/runner/work/movetk-app-template/movetk-app-template/out/trajectory_statistics.csv
+        - uses: actions/upload-artifact@v2
+            with:
+              name: output_trajectories.geojson
+              path: /home/runner/work/movetk-app-template/movetk-app-template/out/output_trajectories.geojson
+

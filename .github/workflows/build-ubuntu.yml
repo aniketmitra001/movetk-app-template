@@ -43,7 +43,7 @@ jobs:
               cd movetk-app-template
               ./ci.sh
         - name: Get GeoLife trajectories
-            run: |
+          run: |
               cd movetk-app-template
               wget https://download.microsoft.com/download/F/4/8/F4894AA5-FDBC-481E-9285-D5F8C4C4F039/Geolife%20Trajectories%201.3.zip
               unzip Geolife\ Trajectories\ 1.3.zip
@@ -54,7 +54,7 @@ jobs:
             cd out
             mv out.csv trajectories.csv
         - name: Get trajectory statisics
-            run: |
+          run: |
               cd movetk-app-template/out
               ../Release/src/process_trajectories trajectories.csv
               pwd

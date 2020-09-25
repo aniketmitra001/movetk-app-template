@@ -18,7 +18,7 @@ endif()
 include(tools)
 # run cmake with -DCMAKE_PREFIX_PATH=path-to-installed-cmake-dir-of-movetk
 find_package(movetk CONFIG REQUIRED)
-# run cmake with -DCMAKE_PREFIX_PATH=path-to-installed-cmake-dir-of-bosch_estm
+
 find_package(Boost REQUIRED COMPONENTS iostreams log)
 find_package(Threads REQUIRED)
 find_package(GDAL 2.2 REQUIRED)

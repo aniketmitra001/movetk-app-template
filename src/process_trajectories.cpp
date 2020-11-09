@@ -28,7 +28,6 @@
 #include "movetk/GeolifeTrajectoryTraits.h"
 #include "movetk/io/ProbeReader.h"
 #include "movetk/TrajectoryReader.h"
-#include "movetk/io/GeoJSONUtils.h"
 #include "movetk/io/GeoJSON.h"
 #include "movetk/algo/Statistics.h"
 #include "movetk/geo/geo.h"

@@ -15,6 +15,7 @@ jobs:
         - uses: actions/checkout@v2
           with:
             repository: heremaps/movetk
+            submodules: recursive
             path: movetk
         - name: install dependencies
           run: brew install boost cgal gdal geographiclib gsl doxygen

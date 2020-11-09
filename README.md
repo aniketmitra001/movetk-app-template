@@ -12,6 +12,8 @@ This project demonstrates how to use [MoveTK](https://github.com/heremaps/movetk
   - Write the trajectories in GeoJSON format
   - Visualize the trajectories in [kepler.gl](https://kepler.gl/)
 
+  ![visualization](kepler_viz.html)
+
 # Setup
 
 You can build this project locally by replicating the steps in the workflow for [Mac](https://github.com/aniketmitra001/movetk-app-template/blob/master/.github/workflows/build-macos.yml) and [Ubuntu](https://github.com/aniketmitra001/movetk-app-template/blob/master/.github/workflows/build-ubuntu.yml)

@@ -12,7 +12,7 @@ This project demonstrates how to use [MoveTK](https://github.com/heremaps/movetk
   - Write the trajectories in GeoJSON format
   - Visualize the trajectories in [kepler.gl](https://kepler.gl/)
 
-  ![visualization](kepler_viz.html)
+  ![visualization](kepler-gl-viz.png)
 
 # Setup
 
